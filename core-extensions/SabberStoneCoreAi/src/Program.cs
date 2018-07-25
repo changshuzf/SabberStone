@@ -23,8 +23,8 @@ namespace SabberStoneCoreAi
 
 			//OneTurn();
 			//FullGame();
-			RandomGames();
-			//TestFullGames();
+			//RandomGames();
+			TestFullGames();
 
 			Console.WriteLine("Test end!");
 			Console.ReadLine();
@@ -290,7 +290,7 @@ namespace SabberStoneCoreAi
 		public static void TestFullGames()
 		{
 
-			int maxGames = 1000;
+			int maxGames = 10;
 			int maxDepth = 10;
 			int maxWidth = 14;
 			int[] player1Stats = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -300,80 +300,82 @@ namespace SabberStoneCoreAi
 			{
 				StartPlayer = -1,
 				Player1Name = "FitzVonGerald",
-				Player1HeroClass = CardClass.PALADIN,
-				Player1Deck = new List<Card>()
-						{
-						Cards.FromName("Blessing of Might"),
-						Cards.FromName("Blessing of Might"),
-						Cards.FromName("Gnomish Inventor"),
-						Cards.FromName("Gnomish Inventor"),
-						Cards.FromName("Goldshire Footman"),
-						Cards.FromName("Goldshire Footman"),
-						Cards.FromName("Hammer of Wrath"),
-						Cards.FromName("Hammer of Wrath"),
-						Cards.FromName("Hand of Protection"),
-						Cards.FromName("Hand of Protection"),
-						Cards.FromName("Holy Light"),
-						Cards.FromName("Holy Light"),
-						Cards.FromName("Ironforge Rifleman"),
-						Cards.FromName("Ironforge Rifleman"),
-						Cards.FromName("Light's Justice"),
-						Cards.FromName("Light's Justice"),
-						Cards.FromName("Lord of the Arena"),
-						Cards.FromName("Lord of the Arena"),
-						Cards.FromName("Nightblade"),
-						Cards.FromName("Nightblade"),
-						Cards.FromName("Raid Leader"),
-						Cards.FromName("Raid Leader"),
-						Cards.FromName("Stonetusk Boar"),
-						Cards.FromName("Stonetusk Boar"),
-						Cards.FromName("Stormpike Commando"),
-						Cards.FromName("Stormpike Commando"),
-						Cards.FromName("Stormwind Champion"),
-						Cards.FromName("Stormwind Champion"),
-						Cards.FromName("Stormwind Knight"),
-						Cards.FromName("Stormwind Knight")
-						},
+				Player1HeroClass = CardClass.SHAMAN,
+				//Player1Deck = new List<Card>()
+				//		{
+				//		Cards.FromName("Blessing of Might"),
+				//		Cards.FromName("Blessing of Might"),
+				//		Cards.FromName("Gnomish Inventor"),
+				//		Cards.FromName("Gnomish Inventor"),
+				//		Cards.FromName("Goldshire Footman"),
+				//		Cards.FromName("Goldshire Footman"),
+				//		Cards.FromName("Hammer of Wrath"),
+				//		Cards.FromName("Hammer of Wrath"),
+				//		Cards.FromName("Hand of Protection"),
+				//		Cards.FromName("Hand of Protection"),
+				//		Cards.FromName("Holy Light"),
+				//		Cards.FromName("Holy Light"),
+				//		Cards.FromName("Ironforge Rifleman"),
+				//		Cards.FromName("Ironforge Rifleman"),
+				//		Cards.FromName("Light's Justice"),
+				//		Cards.FromName("Light's Justice"),
+				//		Cards.FromName("Lord of the Arena"),
+				//		Cards.FromName("Lord of the Arena"),
+				//		Cards.FromName("Nightblade"),
+				//		Cards.FromName("Nightblade"),
+				//		Cards.FromName("Raid Leader"),
+				//		Cards.FromName("Raid Leader"),
+				//		Cards.FromName("Stonetusk Boar"),
+				//		Cards.FromName("Stonetusk Boar"),
+				//		Cards.FromName("Stormpike Commando"),
+				//		Cards.FromName("Stormpike Commando"),
+				//		Cards.FromName("Stormwind Champion"),
+				//		Cards.FromName("Stormwind Champion"),
+				//		Cards.FromName("Stormwind Knight"),
+				//		Cards.FromName("Stormwind Knight")
+				//		},
+				Player1Deck = Decks.BattlecryShudderwockComboShaman,
 				Player2Name = "RehHausZuckFuchs",
 				Player2HeroClass = CardClass.PALADIN,
-				Player2Deck = new List<Card>()
-						{
-						Cards.FromName("Blessing of Might"),
-						Cards.FromName("Blessing of Might"),
-						Cards.FromName("Gnomish Inventor"),
-						Cards.FromName("Gnomish Inventor"),
-						Cards.FromName("Goldshire Footman"),
-						Cards.FromName("Goldshire Footman"),
-						Cards.FromName("Hammer of Wrath"),
-						Cards.FromName("Hammer of Wrath"),
-						Cards.FromName("Hand of Protection"),
-						Cards.FromName("Hand of Protection"),
-						Cards.FromName("Holy Light"),
-						Cards.FromName("Holy Light"),
-						Cards.FromName("Ironforge Rifleman"),
-						Cards.FromName("Ironforge Rifleman"),
-						Cards.FromName("Light's Justice"),
-						Cards.FromName("Light's Justice"),
-						Cards.FromName("Lord of the Arena"),
-						Cards.FromName("Lord of the Arena"),
-						Cards.FromName("Nightblade"),
-						Cards.FromName("Nightblade"),
-						Cards.FromName("Raid Leader"),
-						Cards.FromName("Raid Leader"),
-						Cards.FromName("Stonetusk Boar"),
-						Cards.FromName("Stonetusk Boar"),
-						Cards.FromName("Stormpike Commando"),
-						Cards.FromName("Stormpike Commando"),
-						Cards.FromName("Stormwind Champion"),
-						Cards.FromName("Stormwind Champion"),
-						Cards.FromName("Stormwind Knight"),
-						Cards.FromName("Stormwind Knight")
-						},
+				//Player2Deck = new List<Card>()
+				//		{
+				//		Cards.FromName("Blessing of Might"),
+				//		Cards.FromName("Blessing of Might"),
+				//		Cards.FromName("Gnomish Inventor"),
+				//		Cards.FromName("Gnomish Inventor"),
+				//		Cards.FromName("Goldshire Footman"),
+				//		Cards.FromName("Goldshire Footman"),
+				//		Cards.FromName("Hammer of Wrath"),
+				//		Cards.FromName("Hammer of Wrath"),
+				//		Cards.FromName("Hand of Protection"),
+				//		Cards.FromName("Hand of Protection"),
+				//		Cards.FromName("Holy Light"),
+				//		Cards.FromName("Holy Light"),
+				//		Cards.FromName("Ironforge Rifleman"),
+				//		Cards.FromName("Ironforge Rifleman"),
+				//		Cards.FromName("Light's Justice"),
+				//		Cards.FromName("Light's Justice"),
+				//		Cards.FromName("Lord of the Arena"),
+				//		Cards.FromName("Lord of the Arena"),
+				//		Cards.FromName("Nightblade"),
+				//		Cards.FromName("Nightblade"),
+				//		Cards.FromName("Raid Leader"),
+				//		Cards.FromName("Raid Leader"),
+				//		Cards.FromName("Stonetusk Boar"),
+				//		Cards.FromName("Stonetusk Boar"),
+				//		Cards.FromName("Stormpike Commando"),
+				//		Cards.FromName("Stormpike Commando"),
+				//		Cards.FromName("Stormwind Champion"),
+				//		Cards.FromName("Stormwind Champion"),
+				//		Cards.FromName("Stormwind Knight"),
+				//		Cards.FromName("Stormwind Knight")
+				//		},
+				Player2Deck = Decks.OddPaladin,
 				FillDecks = false,
 				Shuffle = true,
 				SkipMulligan = false,
-				Logging = false,
-				History = false
+				Logging = true,
+				History = true
 			};
 
 			for (int i = 0; i < maxGames; i++)

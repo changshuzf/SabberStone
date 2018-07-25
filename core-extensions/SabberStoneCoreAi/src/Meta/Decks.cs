@@ -346,5 +346,81 @@ namespace SabberStoneCoreAi.Meta
 			Cards.FromName("Sylvanas Windrunner"),
 			Cards.FromName("Alexstrasza")
 		};
+
+
+		/// <summary>
+		/// http://www.hearthstonetopdecks.com/decks/battlecry-shudderwock-combo-shaman-deck-list-guide/
+		/// </summary>
+		public static List<Card> BattlecryShudderwockComboShaman => new List<Card>()
+		{
+			Cards.FromName("Fire Plume Harbinger"),
+			Cards.FromName("Murmuring Elemental"),
+			Cards.FromName("Murmuring Elemental"),
+			Cards.FromName("Far Sight"),
+			Cards.FromName("Far Sight"),
+            Cards.FromName("Healing Rain"),
+			Cards.FromName("Healing Rain"),
+			Cards.FromName("Lightning Storm"),
+            Cards.FromName("Mana Tide Totem"),
+			Cards.FromName("Mana Tide Totem"),
+			Cards.FromName("Hex"),
+			Cards.FromName("Hex"),
+			Cards.FromName("Volcano"),
+			Cards.FromName("Volcano"),
+			Cards.FromName("Grumble, Worldshaker"),
+            Cards.FromName("Shudderwock"),
+            Cards.FromName("Bloodmage Thalnos"),
+			Cards.FromName("Doomsayer"),
+			Cards.FromName("Doomsayer"),
+			Cards.FromName("Tar Creeper"),
+			Cards.FromName("Tar Creeper"),
+			Cards.FromName("Tar Creeper"),
+			Cards.FromName("Tar Creeper"),
+			Cards.FromName("Sandbinder"),
+			Cards.FromName("Sandbinder"),
+			Cards.FromName("Saronite Chain Gang"),
+			Cards.FromName("Saronite Chain Gang"),
+			Cards.FromName("Primordial Drake"),
+			Cards.FromName("Loot Hoarder"),
+			Cards.FromName("Loot Hoarder")
+		};
+
+
+		/// <summary>
+		/// http://www.hearthstonetopdecks.com/decks/odd-paladin-deck-list-guide/
+		/// </summary>
+		public static List<Card> OddPaladin => new List<Card>()
+		{
+			Cards.FromName("Blessing of Might"),
+			Cards.FromName("Lost in the Jungle"),
+			Cards.FromName("Lost in the Jungle"),
+			Cards.FromName("Righteous Protector"),
+			Cards.FromName("Righteous Protector"),
+            Cards.FromName("Divine Favor"),
+			Cards.FromName("Unidentified Maul"),
+			Cards.FromName("Unidentified Maul"),
+            Cards.FromName("Level Up!"),
+			Cards.FromName("Level Up!"),
+			Cards.FromName("Vinecleaver"),
+			Cards.FromName("Vinecleaver"),
+			Cards.FromName("Acherus Veteran"),
+			Cards.FromName("Acherus Veteran"),
+			Cards.FromName("Argent Squire"),
+            Cards.FromName("Argent Squire"),
+            Cards.FromName("Fire Fly"),
+			Cards.FromName("Fire Fly"),
+			Cards.FromName("Ironbeak Owl"),
+			Cards.FromName("Raid Leader"),
+			Cards.FromName("Raid Leader"),
+			Cards.FromName("Stonehill Defender"),
+			Cards.FromName("Stonehill Defender"),
+			Cards.FromName("Fungalmancer"),
+			Cards.FromName("Fungalmancer"),
+			Cards.FromName("Corridor Creeper"),
+			Cards.FromName("Corridor Creeper"),
+			Cards.FromName("Stormwind Champion"),
+			Cards.FromName("Stormwind Champion"),
+			Cards.FromName("Baku the Mooneater")
+		};
 	}
 }
